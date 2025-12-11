@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Le Bois Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #002222;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .error-container {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 8rem;
+            margin: 0;
+            color: #89964e;
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #cbd5e1;
+            margin-bottom: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn-home {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #89964e;
+            color: #002222;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        .btn-home:hover {
+            background-color: #ffffff;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body id="error-page">
+    <div class="error-container">
+        <h1>404</h1>
+        <h2>System Error: Path Not Found</h2>
+        <p>The requested resource could not be located in our architecture. It may have been moved, deleted, or never existed.</p>
+        <a href="index.html" class="btn-home">Return to Homepage</a>
+    </div>
+
+    <!-- Vanta Effect for 404 Page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            VANTA.TOPOLOGY({
+                el: "#error-page",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x89964e,
+                backgroundColor: 0x002222
+            })
+        });
+    </script>
+</body>
+</html>
