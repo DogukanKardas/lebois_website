@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loginForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        if (passwordInput.value === 'admin123') {
+        // Simple password check (In real app, use backend)
+        if (passwordInput.value === 'LeBoisTech!2024&****)') {
             sessionStorage.setItem('lebois_admin_auth', 'true');
             loginOverlay.style.display = 'none';
             loadSubmissions();
