@@ -33,3 +33,4 @@ Modern, responsive, and performance-oriented enterprise software agency website.
 The Admin Panel uses `localStorage` for data persistence. This means form submissions made by visitors will NOT be visible to the admin in this static deployment. For a production environment, a backend API or form service (like Formspree) is required.
 
 # lebois_website
+
