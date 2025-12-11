@@ -130,5 +130,10 @@ function applyConfig() {
 
     // Note: Vanta effect toggling is handled inside the specific page scripts
     // or we can attach a global flag to window
-    window.leboisVantaEnabled = config.vanta !== false;
+    // Default to FALSE if config is missing (based on user request), or use stored value
+    if (config) {
+        window.leboisVantaEnabled = config.vanta === true;
+    } else {
+        window.leboisVantaEnabled = false; // Default OFF
+    }
 }

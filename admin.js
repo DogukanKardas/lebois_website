@@ -67,18 +67,18 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Defaults if empty
         document.getElementById('conf-title').value = config.title || 'Le Bois Technology | Enterprise Software Solutions';
-        document.getElementById('conf-hero-title').value = config.heroTitle || 'Engineered for Performance.\nBuilt to Scale.';
+        document.getElementById('conf-hero-title').value = config.heroTitle || 'Engineered for Performance.Built to Scale.';
         document.getElementById('conf-hero-desc').value = config.heroDesc || 'We architect robust digital ecosystems. From high-frequency scripts to complex enterprise cloud platforms, Le Bois Technology delivers code that means business.';
         
-        document.getElementById('conf-email').value = config.email || 'engineering@lebois.ca';
-        document.getElementById('conf-phone').value = config.phone || '+1 (604) 555-0199';
-        document.getElementById('conf-address').value = config.address || '555 W Hastings St, Vancouver, BC';
+        document.getElementById('conf-email').value = config.email || 'doukan.krdas@gmail.com';
+        document.getElementById('conf-phone').value = config.phone || '+90 545 761 54 94';
+        document.getElementById('conf-address').value = config.address || 'Surrey, BC V3S 9H8, Kanada';
         
-        document.getElementById('conf-linkedin').value = config.linkedin || '#';
+        document.getElementById('conf-linkedin').value = config.linkedin || 'https://www.linkedin.com/company/le-bois-technology';
         document.getElementById('conf-github').value = config.github || '#';
-        document.getElementById('conf-ga').value = config.ga || '';
+        document.getElementById('conf-ga').value = config.ga || 'G-4YBMPJ0GNC';
 
-        document.getElementById('conf-vanta').checked = config.vanta !== false; // Default true
+        document.getElementById('conf-vanta').checked = config.vanta === true; // Default FALSE now
     }
 
     settingsForm.addEventListener('submit', (e) => {
